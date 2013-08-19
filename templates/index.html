@@ -1,0 +1,21 @@
+<html>
+<body>
+<form action="{{url_for('register')}}" method=post>
+<dl>
+
+{% if suc %}
+<dt>注册成功!
+<dt>{{name}}
+<dt>{{password}}
+{% endif %}
+
+<dt>User name:
+<input type=text name=name>
+<dt>Password
+<input type=text name=password>
+<dt><input type=submit value="注册">
+</dl>
+
+</form>
+</body>
+<html>
